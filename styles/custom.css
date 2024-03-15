@@ -1,0 +1,41 @@
+.title_style{
+   font-family: vazirbold;
+   font-size: 17px;
+   color: rgb(0, 0, 0);
+}
+
+.bigBlogBoxStyle{
+   line-height: 1.8rem !important;
+}
+
+/* BLOG OTHER POSTS SLIDER */
+.sliderContainer {
+   scroll-snap-type: x mandatory;
+   scroll-behavior: smooth;
+}
+.sliderContainer::-webkit-scrollbar {
+   height: 0;
+   width: 0;
+}
+.sliderItem {
+   scroll-snap-align: start;
+}
+
+/* LTR DIR */
+.ltr_dir{
+   direction: ltr;
+}
+
+/* SKELETON SHADOW */
+.skeleton_description {
+   background: linear-gradient(120deg , #e5e5e5 30%,#f0f0f0 38% ,#f0f0f0 40% , #e5e5e5 48% );
+   background-size: 200% 100%;
+   background-position: 100% 0;
+   animation: skeleton_animation 1.5s infinite;
+}
+
+@keyframes skeleton_animation {
+   100%{
+      background-position: -100% 0;
+   }
+}
